@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malaysia Stream</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+  <div class="max-w-6xl mx-auto p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+      <h1 class="text-3xl font-bold text-center flex-grow">Malaysia Stream</h1>
+      <button id="darkModeToggle" class="ml-4 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- Channel Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
+
+      <!-- Example Channel (Repeat structure below for all channels) -->
+      <button data-name="TV1" data-link="https://mifntechnology.github.io/HTML5/content/Tv1_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tv1.png" alt="Tv1"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV2" data-link="https://mifntechnology.github.io/HTML5/content/Tv2_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tv2.png" alt="Tv2"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV3" data-link="https://mifntechnology.github.io/HTML5/content/Tv3_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tv3.png" alt="Tv3"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Okey TV" data-link="https://mifntechnology.github.io/HTML5/content/OkeyTv_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/OkeyTv.png" alt="OkeyTv"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV6" data-link="https://mifntechnology.github.io/HTML5/content/Tv6_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tv6.png" alt="Tv6"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Didik TV" data-link="https://mifntechnology.github.io/HTML5/content/Ntv7_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/DidikTv.png" alt="DidikTv"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="8TV" data-link="https://mifntechnology.github.io/HTML5/content/8tv_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/8tv.png" alt="8tv"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV9" data-link="https://mifntechnology.github.io/HTML5/content/Tv9_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tv9.png" alt="Tv9"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV Ikim" data-link="https://mifntechnology.github.io/HTML5/content/TvIkim_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/TvIkim.png" alt="TvIkim"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Dunia Sinema" data-link="https://mifntechnology.github.io/HTML5/content/DuniaSinema_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/DuniaSinema.png" alt="DuniaSinema"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Astro Awani" data-link="https://mifntechnology.github.io/HTML5/content/Awani_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/AstroAwani.png" alt="AstroAwani"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Berita RTM" data-link="https://mifntechnology.github.io/HTML5/content/BeritaRtm_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/BeritaRtm.png" alt="BeritaRtm"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Sukan RTM" data-link="https://mifntechnology.github.io/HTML5/content/SukanRtm_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/SukanRtm.png" alt="SukanRtm"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Bernama TV" data-link="https://mifntechnology.github.io/HTML5/content/BernamaTv_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Bernama.png" alt="BernamaTv"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TVS" data-link="https://mifntechnology.github.io/HTML5/content/Tvs_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/Tvs.png" alt="Tvs"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="TV Alhijrah" data-link="https://mifntechnology.github.io/HTML5/content/TvAlhijrah_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/TvAlhijrah.png" alt="TvAlhijrah"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+      <button data-name="Cartoon Network" data-link="https://mifntechnology.github.io/HTML5/content/CartoonNetwork_live_stream/index.html" class="channel-btn">
+        <img loading="lazy" src="https://github.com/MIFNtechnology/siaranMy/raw/main/logo/CN.png" alt="CartoonNetwork"
+          class="w-32 h-20 border-4 border-black rounded shadow hover:scale-105 hover:shadow-lg transition-transform" />
+      </button>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="popupModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-sm w-full text-center shadow-lg">
+        <h2 id="popupTitle" class="text-xl font-semibold mb-4">Channel Name</h2>
+        <p class="mb-4">Would you like to open this channel?</p>
+        <div class="flex justify-center gap-4">
+          <a id="popupLink" href="#" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Watch Now</a>
+          <button id="closePopup" class="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Dark mode toggle
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Modal logic
+    const popup = document.getElementById('popupModal');
+    const popupTitle = document.getElementById('popupTitle');
+    const popupLink = document.getElementById('popupLink');
+    const closeBtn = document.getElementById('closePopup');
+
+    document.querySelectorAll('.channel-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const name = btn.getAttribute('data-name');
+        const link = btn.getAttribute('data-link');
+        popupTitle.textContent = name;
+        popupLink.href = link;
+        popup.classList.remove('hidden');
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popup.classList.add('hidden');
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
